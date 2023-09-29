@@ -28,10 +28,10 @@ public abstract class JobField {
         return id == jobField.id;
     }
 
-//    @Override
-//    public int hashcode(){
-//        return Objects.hash(id);
-//    }
+    @Override
+    public int hashCode(){
+        return Objects.hash(getId());
+    }
 
     public int getId(){
         return id;
